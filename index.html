@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href = "main.css">
+    <title>Newsbajs</title>
+</head>
+<body>
+
+
+            <header> 
+            <button class="News" onclick="myNews()">    News</button>
+            <button class="Politics" onclick="myPolitics()">Politics</button> 
+            <button class="Sports" onclick="mySports()">  Sports</button>    
+            </header>
+            
+            
+                <p class="News-text" id="News-page">NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS </p>
+
+                <p class="Politics-text" id="Politics-page">POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS </p>
+
+                <p class="Sports-text" id="Sports-page">SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS </p>
+            
+
+                    <script>
+                      
+                      function myNews()
+                      var News = document.getElementById("News");
+                      var Politics= document.getElementById("Politics");
+                      var Sports = document.getElementById("Sports");
+
+                        if (News.style.display === "none") {
+                        News.style.display = "block";
+                        } else if (News.style.display === "block"){
+                        News.style.display = "none";
+                        }
+
+                       function myPolitics()
+                       var News = document.getElementById("News");
+                       var Politics= document.getElementById("Politics");
+                       var Sports = document.getElementById("Sports");
+
+                       if (Politics.style.display === "none"){
+                        Politics.style.display = "block";
+                       } 
+                       else if (Politics.style.display === "block"){
+                           Politics.style.display = "none";
+                       }
+
+                       function mySports()
+                       var News = document.getElementById("News");
+                       var Politics= document.getElementById("Politics");
+                       var Sports = document.getElementById("Sports");
+
+                       if (Sports.style.display === "none"){
+                        Sports.style.display = "block";
+                       }
+                       else if (Sports.style.display === "block"){
+                           Sports.style.display = "none";
+                       }
+
+                    </script>
+
+</body>
+</html>
