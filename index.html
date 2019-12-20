@@ -5,63 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel = "stylesheet" href = "main.css">
-    <title>Newsbajs</title>
+    <title>Rasmus News</title>
 </head>
 <body>
+                <div class="hero">
+                <div class="Homehead">
+                <input class="Homepic" onclick="myHome()" type="image" src="bilder/rasmusnews.png" alt="Home">
+            </div>
 
+            <div class="titles">
+            <button class="Economy" onclick="myEconomy()">      Politics </button>
+            <button class="Sports" onclick="mySports()">        Sports </button>  
+            <button class="Politics" onclick="myPolitics()">    About us</button> 
+        </div>
+    </div>
+                <div class="homecontainer" id="Home-page" style="display: block">
+                <p class="hometitle"> <b>Welcome!</b></p>
+                <p class="hometext">This is a wholesome and happy newssite made for only good news! This site was made by one person, me! You can find out more in the "About us" section.</p> 
+                   <p class="homebye">Happy browsing!</p>   
+                </div>
 
-            <header> 
-            <button class="News" onclick="myNews()">    News</button>
-            <button class="Politics" onclick="myPolitics()">Politics</button> 
-            <button class="Sports" onclick="mySports()">  Sports</button>    
-            </header>
+                <!-- 
+                        POLITICS TEXT
+                -->
             
-            
-                <p class="News-text" id="News-page">NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS </p>
+                    <div class="plasticcontainer" id="Economy-page" style="display: none">
+                        <img class="plastic" src="bilder/plasticbags.jpg" alt="Plastic bags">
+                        <p class="plastictitle"> <b>Two More US States Have Approved Bans On Single-Use Plastic Bags!</b></p>
+                        <div class="plastictext" > 
+                <p> On the very same day last week, the Governors of Maine and Vermont both passed legislation to ban single-use plastic bags, making them the fourth and fifth US states to do.</p>  
 
-                <p class="Politics-text" id="Politics-page">POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS POLITICS </p>
+                        <p> Gov. Janet Mills (D) signed LD 1532 on Monday, stating that “a retail establishment may not provide a single-use carry-out bag to a customer at the point of sale or otherwise make single-use carry-out bags available to customers.”</p>
+                    
+                        <p>The bill will apply to the sale of single-use plastic bags in grocery stores, although supermarkets must charge 5 cents for recyclable paper bags or reusable plastic bags that can withstand at least 75 uses. Restaurants and charities, however, are exempt from the fee.</p>   
+                        
+                        <p class="sportslink"><br>This article can also be found at: <br> <a href=https://www.goodnewsnetwork.org/two-more-states-ban-single-use-plastic-bags>Good News Network.</a></p>
+                </div></div>
 
-                <p class="Sports-text" id="Sports-page">SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS SPORTS </p>
-            
+                <!-- 
+                        ABOUT US
+                -->
+                <div class="profilbildcontainer" id="Politics-page" style="display: none">
+                            <p class="abouttitle"> <b> About me! </b></p> 
+                        <img class="profilbild" src="bilder/profilbildfinbild.PNG" alt="profilbild">
+                        <div class="politicstext">
+                            <p>Hi, I'm Rasmus, born in Sweden and I'm currently studying at NTI Gymnasium. This newssite was made as a project for our Website development course. </p>
+                        <p>I've used Javascript, HTML, and CSS to create this   website!</p>
+                        </div> </div>
+
+                <!-- 
+                        SPORTS
+                -->
+                <div class="sportscontainer" id="Sports-page" style="display: none">
+                    <img class="mormor" src="bilder/mormorspringer.png" alt="mormor">
+                    <p class="sportstitle"><b>101-Year-old Breaks World Running Record: “I Missed My Nap for This”</b></p>
+                    <div class="sportstext"> 
+                   
+                    <p>101-year-old Julia “Hurricane” Hawkins just broke a world record – and she is pretty nonchalant about it.
+
+                        By running in the National Senior Games in Birmingham, Alabama on Saturday, the senior completed the 100-meter dash in 40.2 seconds, which is six seconds less than the previous world record for women over 100 years old.
+                        
+                       <p> “I missed my nap for this,” she said casually, according to USATF.</p>
+                       <p class="sportslink"><br>This article can also be found at: <br><a href="https://www.goodnewsnetwork.org/101-year-old-breaks-world-running-record-i-missed-my-nap-for-this/">Good News Network.</a></p>
+                </div> </div>
+
+                
 
                     <script>
-                      
-                      function myNews()
-                      var News = document.getElementById("News");
-                      var Politics= document.getElementById("Politics");
-                      var Sports = document.getElementById("Sports");
+                    var Economy = document.getElementById("Economy-page");
+                       var Politics= document.getElementById("Politics-page");
+                       var Sports = document.getElementById("Sports-page");
+                       var Home = document.getElementById("Home-page");
 
-                        if (News.style.display === "none") {
-                        News.style.display = "block";
-                        } else if (News.style.display === "block"){
-                        News.style.display = "none";
-                        }
+                    function myHome(){
+                      if (Home.style.display === "none") {
+                        Economy.style.display = "none";
+                        Politics.style.display = "none";
+                        Sports.style.display = "none"; 
+                        Home.style.display = "block";
+                    }}
 
-                       function myPolitics()
-                       var News = document.getElementById("News");
-                       var Politics= document.getElementById("Politics");
-                       var Sports = document.getElementById("Sports");
+                      function myEconomy(){
+                      if (Economy.style.display === "none") {
+                        Economy.style.display = "block";
+                        Politics.style.display = "none";
+                        Sports.style.display = "none"; 
+                        Home.style.display = "none";
+                    }}
 
+                       function myPolitics(){
                        if (Politics.style.display === "none"){
+                        Economy.style.display = "none";
                         Politics.style.display = "block";
-                       } 
-                       else if (Politics.style.display === "block"){
-                           Politics.style.display = "none";
-                       }
+                        Sports.style.display = "none"; 
+                        Home.style.display = "none";
+                    }}
 
-                       function mySports()
-                       var News = document.getElementById("News");
-                       var Politics= document.getElementById("Politics");
-                       var Sports = document.getElementById("Sports");
-
+                       function mySports(){
                        if (Sports.style.display === "none"){
+                        Economy.style.display = "none";
+                        Politics.style.display = "none";
                         Sports.style.display = "block";
-                       }
-                       else if (Sports.style.display === "block"){
-                           Sports.style.display = "none";
-                       }
-
+                        Home.style.display = "none";
+                    }}
                     </script>
-
 </body>
 </html>

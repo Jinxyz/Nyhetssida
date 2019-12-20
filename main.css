@@ -1,25 +1,240 @@
-header {
+html, body{
+    margin: 0;
+    background-color: #f0eee9;
+}
+
+.titles {
     text-align: center;
-    background-color:white;
-    height: 10em;
+    background-color:#f0eee9;
     font-family:"Montserrat";
     display: flex;
     max-width: none;
+    height: 180%;
 }
 
-html, body{
-    margin: 0;
-}
-
-.News, .Politics, .Sports {
+.Economy, .Politics, .Sports {
     height: 20%;
     width: 100%;
     padding: 0%;
-    background-color: beige;
     border: none;
-    font-size: 120%;
+    font-size: 5vw;
+}
+.Economy:focus, .Politics:focus, .Sports:focus {
+    outline: none;
 }
 
-a {
-    text-decoration: none;
+.Economy{
+    background: linear-gradient(to right, #33cccc 0%, #00ccff 100%);
+
+}
+.Sports{
+    background: linear-gradient(to right, #00ccff 0%, #3399ff 100%);
+
+}
+.Politics{
+    background: linear-gradient(to right, #3399ff 0%, #cc99ff 100%);
+
+}
+
+.Homepic{
+    max-width: 100%;
+    width: 50%;
+}
+.Homehead{
+    background-image: linear-gradient(to right, #33cccc , #00ccff , #3399ff, #cc99ff); 
+    text-align: center;
+}
+.homecontainer{
+    max-width: 100%;
+    background-color: white;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    font-size: 4vw;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+.hometitle{
+    text-align: center;
+    padding-top: 5%;
+}
+.hometext{ 
+    padding-right: 4%;
+    padding-left: 4%;
+}
+.homebye{
+    padding-bottom: 5%;
+}
+
+/* Plastic */
+.plastic {
+    width: 60%;
+    margin-top: 3.5%;
+}
+.plasticcontainer {
+    max-width: 100%;
+    background-color: white;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    font-size: 4vw;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.plastictitle{
+    margin-bottom: -4%;
+}
+.plastictext{
+    padding: 4%;
+}
+
+
+
+/* Sports */
+.mormor { 
+    width: 60%;
+    margin-top: 3.5%;
+}
+.sportscontainer {
+    max-width: 100%;
+    background-color: white;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    font-size: 4vw;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+.sportstitle{
+    margin-bottom: -4%;
+}
+.sportstext{
+    padding: 4%;
+}
+
+
+.profilbild{
+    width: 60%;
+    margin-top: 0.5%;
+}
+.profilbildcontainer{
+    max-width: 100%;
+    background-color: white;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    font-size: 4vw;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+.abouttitle{
+    text-align: center;
+    padding-top: 5%;
+}
+.politicstext{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+
+
+@media only screen and (min-width: 600px){
+
+.Homepic{
+    max-width: 100%;
+    width: 28%;
+}
+.hero{
+    max-height: 500px;
+    height: 200px;
+}
+.Economy, .Politics, .Sports {
+    font-size: 2.2vw;
+}
+
+
+.homecontainer{
+    width: 60%;
+    font-size: 1.5vw;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.hometitle{
+    font-size: 2.3vw;
+}
+.hometext{ 
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.homebye{
+    padding-bottom: 2.5%;
+}
+
+
+.plastic {
+    width: 60%;   
+    padding-top: 3%;
+}
+.plasticcontainer {
+    width: 60%;
+    font-size: 2vw;
+    border-radius: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.plastictitle{
+    font-size: 2vw;
+}
+.plastictext{
+    font-size: 1.5vw;
+}
+
+
+.sports {
+    width: 60%;   
+    padding-top: 3%;
+}
+.sportscontainer {
+    width: 60%;
+    font-size: 2vw;
+    border-radius: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.sportstitle{
+    font-size: 2vw;
+}
+.sportstext{
+    font-size: 1.5vw;
+}
+
+
+.profilbildcontainer{
+    width: 60%;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.abouttitle{
+    padding-top: 5%;
+    font-size: 2vw;
+}
+.profilbild{
+    width: 55%;
+}
+.politicstext{ 
+    padding-right: 4%;
+    padding-left: 4%;
+    font-size: 1.5vw;
+}
+.homebye{
+    padding-bottom: 5%;
+}
+
 }
